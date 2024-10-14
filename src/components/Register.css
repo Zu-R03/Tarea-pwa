@@ -1,42 +1,36 @@
 .register-container {
     display: flex;
-    align-items: center;
+    flex-direction: row; /* Imagen y formulario en fila */
     justify-content: center;
-    min-height: 100vh; /* Altura mínima ajustada */
-    background-color: #f0f4f8;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
     padding: 20px;
-    flex-direction: row; /* Mantiene la imagen y el formulario en una fila */
 }
 
 .register-image {
-    flex: 1; /* Ocupa el espacio de la mitad izquierda */
-    max-width: 400px; /* Ajusta el ancho máximo de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Asegura que la imagen no se deforme */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    margin-right: 40px; /* Espacio entre la imagen y el formulario */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    flex: 1; /* Imagen ocupa la mitad del ancho */
+    max-width: 50%; /* Limita el ancho de la imagen */
+    height: auto;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
 .register-form {
-    flex: 1; /* Ocupa el espacio de la mitad derecha */
-    width: 100%;
+    flex: 1; /* Formulario ocupa la mitad del ancho */
     max-width: 400px; /* Ancho máximo del formulario */
-    padding: 20px; /* Espaciado interno ajustado */
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .register-form h2 {
     text-align: center;
     margin-bottom: 20px; /* Espaciado inferior mayor */
-    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
 .register-form div {
-    margin-bottom: 15px; /* Espaciado entre campos ajustado */
+    margin-bottom: 15px; /* Espaciado entre campos */
 }
 
 .register-form label {
